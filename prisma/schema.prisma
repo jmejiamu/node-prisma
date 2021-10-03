@@ -9,3 +9,10 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
+
+model Profile {
+  id      Int    @id @default(autoincrement())
+  picture String
+  name    String
+  hobby   String
+}
